@@ -6,13 +6,12 @@
 body{    
     background-color: rgb(84, 4, 158);
 }
-
 main{
     width: 320px;
     height: 500px;
     margin: 0 auto;
     margin-top: 30px;
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(204, 154, 250);
     border: 3px solid white;
     border-radius: 10px;
@@ -25,10 +24,16 @@ h1{
     font-size: 25px;
     text-align: center;
 }
-
-#img-cat{
-    max-width: 260px;
-    max-height: 260px;
+.imgs-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.img-cat{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
     border-radius: 10px;
 }
 button{
